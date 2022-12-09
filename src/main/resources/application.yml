@@ -1,0 +1,7 @@
+resilience4j.circuitbreaker:
+  configs:
+    default:
+      permittedNumberOfCallsInHalfOpenState: 10
+      waitDurationInOpenState: 10000
+      failureRateThreshold: 60
+      eventConsumerBufferSize: 10
