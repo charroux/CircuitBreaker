@@ -10,6 +10,7 @@ public class MyController {
     @GetMapping("/")
     @CircuitBreaker(name = "getInvoiceCB", fallbackMethod = "otherHello")
     public String sayHello() throws Exception {
+        System.out.println("Say Hello !");
         throw new Exception();
     }
 
